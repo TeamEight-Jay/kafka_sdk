@@ -30,10 +30,10 @@ public class KafkaConfig {
 
 
     @Bean
-    public KafkaTemplate<String, PlayQuestionKafkaMessage> kafkaTemplate() {
+    public KafkaTemplate<String, PlayQuestionKafkaMessage> playQuestionKafkaTemplate() {
         return new KafkaTemplate<>(playQuestionFactory());
     }
-    
+
 
 
 
