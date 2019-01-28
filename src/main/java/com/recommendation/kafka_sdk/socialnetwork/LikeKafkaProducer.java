@@ -11,7 +11,7 @@ public class LikeKafkaProducer {
     KafkaTemplate<String,LikeKafkaMessage> likeKafkaTemplate;
 
     public void sendLikeKafkaMessage(LikeKafkaMessage likeKafkaMessage){
-        likeKafkaTemplate.send("FOLLOW",likeKafkaMessage);
+        likeKafkaTemplate.send("LIKE",likeKafkaMessage);
     }
 
 
