@@ -1,12 +1,13 @@
 package com.recommendation.kafka_sdk;
 
-import com.recommendation.kafka_sdk.contest.PlayQuestionKafkaMessage;
-import com.recommendation.kafka_sdk.contest.SubscribeContestKafkaMessage;
-import com.recommendation.kafka_sdk.socialnetwork.FollowKafkaMessage;
-import com.recommendation.kafka_sdk.socialnetwork.LikeKafkaMessage;
+import com.recommendation.kafka_sdk.dto.PlayQuestionKafkaMessage;
+import com.recommendation.kafka_sdk.dto.SubscribeContestKafkaMessage;
+import com.recommendation.kafka_sdk.dto.FollowKafkaMessage;
+import com.recommendation.kafka_sdk.dto.LikeKafkaMessage;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
@@ -18,6 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
+@ComponentScan(basePackages = {"com.recommendation.kafka_sdk"})
 @EnableKafka
 public class KafkaConfig {
 

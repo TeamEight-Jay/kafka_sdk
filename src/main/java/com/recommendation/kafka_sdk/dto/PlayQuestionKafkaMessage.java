@@ -1,10 +1,10 @@
-package com.recommendation.kafka_sdk.socialnetwork;
+package com.recommendation.kafka_sdk.dto;
 
-public class FollowKafkaMessage {
-
+public class PlayQuestionKafkaMessage {
     private String userId;
-    private String userIdForFollowed;
+    private String category;
     private long timestamp;
+
 
     public String getUserId() {
         return userId;
@@ -14,12 +14,12 @@ public class FollowKafkaMessage {
         this.userId = userId;
     }
 
-    public String getUserIdForFollowed() {
-        return userIdForFollowed;
+    public String getCategory() {
+        return category;
     }
 
-    public void setUserIdForFollowed(String userIdForFollowed) {
-        this.userIdForFollowed = userIdForFollowed;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public long getTimestamp() {
@@ -32,9 +32,9 @@ public class FollowKafkaMessage {
 
     @Override
     public String toString() {
-        return "FollowKafkaMessage{" +
+        return "PlayQuestionKafkaMessage{" +
                 "userId='" + userId + '\'' +
-                ", userIdForFollowed='" + userIdForFollowed + '\'' +
+                ", category='" + category + '\'' +
                 ", timestamp=" + timestamp +
                 '}';
     }

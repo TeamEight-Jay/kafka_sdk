@@ -1,5 +1,6 @@
 package com.recommendation.kafka_sdk.contest;
 
+import com.recommendation.kafka_sdk.dto.SubscribeContestKafkaMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;

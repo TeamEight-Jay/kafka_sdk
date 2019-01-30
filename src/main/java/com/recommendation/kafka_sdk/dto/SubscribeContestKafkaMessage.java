@@ -1,10 +1,9 @@
-package com.recommendation.kafka_sdk.contest;
+package com.recommendation.kafka_sdk.dto;
 
-public class PlayQuestionKafkaMessage {
+public class SubscribeContestKafkaMessage {
     private String userId;
     private String category;
     private long timestamp;
-
 
     public String getUserId() {
         return userId;
@@ -32,7 +31,7 @@ public class PlayQuestionKafkaMessage {
 
     @Override
     public String toString() {
-        return "PlayQuestionKafkaMessage{" +
+        return "SubscribeContestKafkaMessage{" +
                 "userId='" + userId + '\'' +
                 ", category='" + category + '\'' +
                 ", timestamp=" + timestamp +

@@ -1,7 +1,9 @@
-package com.recommendation.kafka_sdk.contest;
+package com.recommendation.kafka_sdk.dto;
 
-public class SubscribeContestKafkaMessage {
+public class LikeKafkaMessage {
+
     private String userId;
+    private String userIdAuthor;
     private String category;
     private long timestamp;
 
@@ -11,6 +13,14 @@ public class SubscribeContestKafkaMessage {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    public String getUserIdAuthor() {
+        return userIdAuthor;
+    }
+
+    public void setUserIdAuthor(String userIdAuthor) {
+        this.userIdAuthor = userIdAuthor;
     }
 
     public String getCategory() {
@@ -31,8 +41,9 @@ public class SubscribeContestKafkaMessage {
 
     @Override
     public String toString() {
-        return "SubscribeContestKafkaMessage{" +
+        return "LikeKafkaMessage{" +
                 "userId='" + userId + '\'' +
+                ", userIdAuthor='" + userIdAuthor + '\'' +
                 ", category='" + category + '\'' +
                 ", timestamp=" + timestamp +
                 '}';
