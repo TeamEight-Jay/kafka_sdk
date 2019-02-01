@@ -14,6 +14,6 @@ public class PlayQuestionKafkaProducer {
 
     public void sendPlayQuestionKafkaMessage(PlayQuestionKafkaMessage playQuestionKafkaMessage)
     {
-        playQuestionKafkaTemplate.send("PLAY_QUESTION",playQuestionKafkaMessage);
+        playQuestionKafkaTemplate.send("PLAY_QUESTION_EXP",playQuestionKafkaMessage);
     }
 }

@@ -12,7 +12,7 @@ public class LikeKafkaProducer {
     KafkaTemplate<String,LikeKafkaMessage> likeKafkaTemplate;
 
     public void sendLikeKafkaMessage(LikeKafkaMessage likeKafkaMessage){
-        likeKafkaTemplate.send("LIKE",likeKafkaMessage);
+        likeKafkaTemplate.send("LIKE_EXP",likeKafkaMessage);
     }
 
 

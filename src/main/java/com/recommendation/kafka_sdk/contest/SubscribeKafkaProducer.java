@@ -13,6 +13,6 @@ public class SubscribeKafkaProducer {
 
     public void sendSubscribeKafkaMessage(SubscribeContestKafkaMessage subscribeContestKafkaMessage)
     {
-        subscribeContestKafkaTemplate.send("SUBSCRIBE",subscribeContestKafkaMessage);
+        subscribeContestKafkaTemplate.send("SUBSCRIBE_EXP",subscribeContestKafkaMessage);
     }
 }

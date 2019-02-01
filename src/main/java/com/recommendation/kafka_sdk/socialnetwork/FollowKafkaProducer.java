@@ -12,7 +12,7 @@ public class FollowKafkaProducer {
     KafkaTemplate<String,FollowKafkaMessage> followKafkaTemplate;
 
     public void sendFollowKafkaMessage(FollowKafkaMessage followKafkaMessage){
-        followKafkaTemplate.send("FOLLOW",followKafkaMessage);
+        followKafkaTemplate.send("FOLLOW_EXP",followKafkaMessage);
     }
 
 }
